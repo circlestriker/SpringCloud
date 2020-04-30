@@ -19,7 +19,7 @@ import java.util.List;
 @RefreshScope
 public class ProductService extends ServiceImpl<ProductMapper, Product> implements IProductService {
 
-    @Value("${producer.product:123}")
+    @Value("${producer.product:123}") //123是默认值
     private String value;
 
     @Override
